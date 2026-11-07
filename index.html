@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1b2444">
+  <meta name="description" content="Conheça o universo de Luana Figueiredo: um portfólio ilustrado e interativo com projetos, desenvolvimento front-end e criatividade.">
+  <title>Universo de Luana | Vila Criativa</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="art.js" defer></script>
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#mundo">Ir para o mapa</a>
+  <div class="ambient ambient-left" aria-hidden="true"></div>
+  <div class="ambient ambient-right" aria-hidden="true"></div>
+  <header class="topbar shell">
+    <a class="brand" href="https://luanafigdev.github.io/portfolio/" aria-label="Portfólio principal de Luana Figueiredo">
+      <span class="monogram">LF<span class="brand-star">✦</span></span><strong>LUANA.DEV</strong>
+    </a>
+    <div class="top-end">
+      <span class="online"><i></i> A VILA ESTÁ ABERTA <small>V1 · 2D</small></span>
+      <a class="traditional" href="https://luanafigdev.github.io/portfolio/">Portfólio tradicional ↗</a>
+    </div>
+  </header>
+
+  <main class="shell" id="mundo">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="intro-title">
+        <p class="kicker">✦ BEM-VINDA(O) AO ✦</p>
+        <h1 id="page-title"><span class="title-orbit">✧</span> Universo de <span>Luana</span><span class="title-spark">✦</span></h1>
+      </div>
+      <p class="intro-copy">Explore uma vila de ideias, projetos e criatividade. Cada lugar guarda uma parte da minha história!</p>
+    </section>
+
+    <section class="game-grid" aria-label="Exploração interativa">
+      <div class="play-area">
+        <div class="game-frame" id="game-frame">
+          <div class="frame-top">
+            <span><i class="live-dot"></i><span id="scene-name">VILA CRIATIVA</span></span>
+            <span id="scene-counter">0 / 4 VISITADOS</span>
+          </div>
+          <div class="canvas-box">
+            <canvas id="game" width="768" height="480" tabindex="0" aria-label="Mapa ilustrado interativo. Use WASD ou as setas para andar. Pressione E para entrar nos lugares. Aproxime-se do Dudu para fazer carinho. Os prédios também podem ser acessados por clique ou pela lista ao lado.">Seu navegador não suporta Canvas. Use o guia de exploração.</canvas>
+            <div class="fade-screen" id="fade-screen" aria-hidden="true"></div>
+            <div class="surprise-toast" id="surprise-toast" role="status" aria-live="polite" hidden></div>
+          </div>
+          <div class="frame-bottom">
+            <span id="hint" aria-live="polite">Escolha um prédio ou movimente a personagem.</span>
+            <button type="button" id="interact" disabled>Explorar <kbd>E</kbd></button>
+            <button type="button" id="exit" hidden>← Voltar ao mapa</button>
+          </div>
+        </div>
+        <div class="under-game"><span>Use <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> ou as setas para andar · <kbd>E</kbd> interagir · <kbd>Esc</kbd> voltar</span><span>✧ Uma vila feita com código</span></div>
+        <div class="mobile-pad" aria-label="Controles de toque">
+          <div class="dpad"><button data-move="up" aria-label="Para cima">▲</button><button data-move="left" aria-label="Para a esquerda">◀</button><button data-move="down" aria-label="Para baixo">▼</button><button data-move="right" aria-label="Para a direita">▶</button></div>
+          <button id="mobile-interact" class="mobile-interact" type="button" disabled>INTERAGIR ✦</button>
+        </div>
+      </div>
+      <aside class="guide" aria-label="Guia de exploração">
+        <p class="kicker">GUIA DE EXPLORAÇÃO</p>
+        <h2>Por onde <em>começar?</em></h2>
+        <p class="guide-desc">Explore os quatro cantinhos da minha vila criativa e conheça meus projetos, minha formação e um pouco do meu processo.</p>
+        <div class="places" id="places">
+          <button type="button" data-scene="flor"><span class="place-icon bakery" aria-hidden="true">✿</span><span><strong>Confeitaria</strong><small>Flor de Açúcar · redesign</small></span><span aria-hidden="true">↗</span></button>
+          <button type="button" data-scene="arcade"><span class="place-icon arcade" aria-hidden="true">✦</span><span><strong>Fliperama</strong><small>Flappy Doggy · jogo web</small></span><span aria-hidden="true">↗</span></button>
+          <button type="button" data-scene="lab"><span class="place-icon lab" aria-hidden="true">&lt;/&gt;</span><span><strong>Laboratório</strong><small>Sobre mim · tecnologias</small></span><span aria-hidden="true">↗</span></button>
+          <button type="button" data-scene="contact"><span class="place-icon contact" aria-hidden="true">✉</span><span><strong>Correio</strong><small>Contato profissional</small></span><span aria-hidden="true">↗</span></button>
+        </div>
+        <p class="mascot-note">🐾 O Dudu está passeando pela praça. Encontre-o e faça carinho!</p>
+        <div id="dudu-secret" class="dudu-secret" hidden>✦ Segredo encontrado: você conquistou a amizade do Dudu, guardião da vila! 🐾</div>
+        <details class="help"><summary>Como explorar a vila?</summary>
+          <p>Use as setas ou WASD para caminhar. Perto de um prédio ou objeto, pressione E ou use o botão <strong>Explorar</strong>. Aperte Esc para voltar. No celular, use as setas na tela ou toque nos locais do guia.</p>
+          <p>Não quer jogar? Todos os quatro lugares podem ser abertos diretamente pelo guia acima.</p>
+        </details>
+        <div class="room-actions" id="room-actions" hidden><p class="kicker">OBJETOS DO AMBIENTE</p><div id="objects"></div></div>
+        <div class="progress">
+          <div class="progress-row"><span>SUAS CONQUISTAS</span><strong id="progress-number">0/4</strong></div>
+          <div class="stamps" id="stamps" aria-label="Lugares visitados"><span>✿</span><span>✦</span><span>⌘</span><span>✉</span></div>
+          <p id="progress-message">Visite os quatro lugares e complete sua coleção de selos!</p>
+          <button type="button" id="reset-progress" class="reset-progress">↺ Reiniciar conquistas</button>
+        </div>
+      </aside>
+    </section>
+    <footer class="footnote">
+      <span>✦ DESIGN + DESENVOLVIMENTO + CURIOSIDADE</span>
+      <p>Nem toda experiência digital precisa ser uma página convencional.</p>
+      <a href="https://github.com/luanafigdev" target="_blank" rel="noopener noreferrer">Meu GitHub ↗</a>
+    </footer>
+  </main>
+
+  <div id="dialog" class="dialog-wrap" hidden>
+    <div class="dialog-backdrop" data-close="true"></div>
+    <section class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title" aria-describedby="dialog-description">
+      <div class="dialog-top"><span id="dialog-label">DESCUBRA</span><button type="button" id="dialog-close" aria-label="Fechar painel">×</button></div>
+      <div class="dialog-emblem" id="dialog-emblem" aria-hidden="true">✦</div>
+      <h2 id="dialog-title"></h2><p id="dialog-description"></p>
+      <div id="dialog-tags" class="dialog-tags"></div><div id="dialog-links" class="dialog-links"></div>
+      <p class="dialog-tip">Pressione ESC para fechar e continuar explorando.</p>
+    </section>
+  </div>
+  <noscript><div class="nojs">Ative o JavaScript para explorar o mapa. Você também pode acessar <a href="https://luanafigdev.github.io/portfolio/">o portfólio tradicional</a>.</div></noscript>
+</body>
+</html>

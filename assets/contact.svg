@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="768" height="480" viewBox="0 0 768 480">
+ <defs>
+  <linearGradient id="walls" x1="0" y1="0" x2="0.3" y2="1"><stop stop-color="#ffecdc"/><stop offset="1" stop-color="#f2c9ae"/></linearGradient>
+  <linearGradient id="floor" x1="0" y1="0" x2="0.7" y2="1"><stop stop-color="#f5ddca"/><stop offset="1" stop-color="#c68e92"/></linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e8fcff" stop-opacity=".92"/><stop offset=".6" stop-color="#ffdfac" stop-opacity=".5"/><stop offset="1" stop-color="#a3acda" stop-opacity=".65"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#fff5c8" stop-opacity=".8"/><stop offset="1" stop-color="#fff7d0" stop-opacity="0"/></radialGradient>
+  <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%"><feGaussianBlur stdDeviation="6"/></filter>
+  <filter id="light" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="4"/></filter>
+ </defs>
+ <rect width="768" height="480" fill="url(#walls)"/>
+ <rect x="0" y="0" width="768" height="16" fill="#c68e92" opacity=".8"/>
+ <rect x="0" y="294" width="768" height="186" fill="url(#floor)"/>
+ <path d="M0 294H768" stroke="#c68e92" stroke-width="11" opacity=".7"/>
+ <path d="M0 308H768" stroke="#fff" stroke-width="3" opacity=".25"/>
+ 
+<path d="M0 323.4 H768" stroke="#c68e92" stroke-opacity=".35" stroke-width="2"/>
+<path d="M0 368.9 H768" stroke="#c68e92" stroke-opacity=".35" stroke-width="2"/>
+<path d="M0 423.5 H768" stroke="#c68e92" stroke-opacity=".35" stroke-width="2"/>
+<path d="M0 485.0 H768" stroke="#c68e92" stroke-opacity=".35" stroke-width="2"/>
+<path d="M384 294 L-300 480" stroke="#c68e92" stroke-opacity=".25" stroke-width="2"/>
+<path d="M384 294 L-175 480" stroke="#c68e92" stroke-opacity=".25" stroke-width="2"/>
+<path d="M384 294 L-50 480" stroke="#c68e92" stroke-opacity=".25" stroke-width="2"/>
+<path d="M384 294 L75 480" stroke="#c68e92" stroke-opacity=".25" stroke-width="2"/>
+<path d="M384 294 L200 480" stroke="#c68e92" stroke-opacity=".25" stroke-width="2"/>
+<path d="M384 294 L325 480" stroke="#c68e92" stroke-opacity=".25" stroke-width="2"/>
+<path d="M384 294 L450 480" stroke="#c68e92" stroke-opacity=".25" stroke-width="2"/>
+<path d="M384 294 L575 480" stroke="#c68e92" stroke-opacity=".25" stroke-width="2"/>
+<path d="M384 294 L700 480" stroke="#c68e92" stroke-opacity=".25" stroke-width="2"/>
+<path d="M384 294 L825 480" stroke="#c68e92" stroke-opacity=".25" stroke-width="2"/>
+<path d="M384 294 L950 480" stroke="#c68e92" stroke-opacity=".25" stroke-width="2"/>
+<path d="M384 294 L1075 480" stroke="#c68e92" stroke-opacity=".25" stroke-width="2"/>
+<path d="M15 16V304" stroke="#c68e92" opacity=".35" stroke-width="7"/>
+<path d="M753 16V304" stroke="#c68e92" opacity=".35" stroke-width="7"/>
+<rect x="247" y="17" width="274" height="49" rx="21" fill="#c68e92" opacity=".6" filter="url(#shadow)"/>
+ <rect x="249" y="17" width="270" height="48" rx="20" fill="#312649" stroke="#ffdfac" stroke-width="5"/>
+ <rect x="255" y="23" width="258" height="35" rx="16" fill="#ffffff" opacity=".07"/>
+ <text x="384" y="49" text-anchor="middle" font-family="Georgia,serif" font-weight="bold" font-size="23" fill="#fff7e6">CORREIO DA VILA</text>
+ 
+<path d="M98 0V81" stroke="#c68e92" stroke-width="4"/><ellipse cx="98" cy="105" rx="71" ry="56" fill="url(#glow)" opacity=".65"/>
+ <path d="M69 91Q98 39 127 91Z" fill="#ffdfac" stroke="#c68e92" stroke-width="3"/>
+ <ellipse cx="98" cy="92" rx="30" ry="6" fill="#fff6d8"/>
+ 
+<path d="M678 0V81" stroke="#c68e92" stroke-width="4"/><ellipse cx="678" cy="105" rx="71" ry="56" fill="url(#glow)" opacity=".65"/>
+ <path d="M649 91Q678 39 707 91Z" fill="#ffdfac" stroke="#c68e92" stroke-width="3"/>
+ <ellipse cx="678" cy="92" rx="30" ry="6" fill="#fff6d8"/>
+ 
+<path d="M52 129Q89 61 127 129V272H52Z" fill="#fff2df" stroke="#c38c8b" stroke-width="7"/>
+ <path d="M60 135Q88 84 119 135V264H60Z" fill="url(#glass)"/>
+ <path d="M89 105V265M61 193H118" stroke="#fff8de" stroke-width="6"/>
+ <circle cx="96" cy="151" r="19" fill="#fff9e0" opacity=".7"/>
+ 
+<path d="M641 129Q678 61 716 129V272H641Z" fill="#fff2df" stroke="#c38c8b" stroke-width="7"/>
+ <path d="M649 135Q677 84 708 135V264H649Z" fill="url(#glass)"/>
+ <path d="M678 105V265M650 193H707" stroke="#fff8de" stroke-width="6"/>
+ <circle cx="685" cy="151" r="19" fill="#fff9e0" opacity=".7"/>
+ 
+<path d="M180 81Q384 109 585 81" fill="none" stroke="#d7a4aa" stroke-width="7"/>
+ <rect x="298" y="90" width="173" height="40" rx="15" fill="#fff1df" stroke="#b97f95" stroke-width="5"/>
+ <text x="384" y="115" text-anchor="middle" font-size="16" font-family="Georgia" fill="#8c657a">Cartas &amp; ideias</text>
+<ellipse cx="206" cy="319" rx="116" ry="20" fill="#9c5f6c" opacity=".2"/>
+ <rect x="115" y="255" width="194" height="24" rx="9" fill="#b47e75" stroke="#855e72" stroke-width="4"/>
+ <rect x="135" y="279" width="16" height="66" rx="6" fill="#886777"/>
+ <rect x="274" y="279" width="16" height="66" rx="6" fill="#886777"/>
+ <rect x="150" y="179" width="118" height="76" rx="9" fill="#fffaf0" stroke="#bd89a3" stroke-width="5"/>
+ <path d="M156 184L211 228L263 184" fill="none" stroke="#c58da5" stroke-width="4"/>
+ <path d="M156 249L194 217M267 249L228 217" fill="none" stroke="#c58da5" stroke-width="4"/>
+ <circle cx="211" cy="220" r="12" fill="#e5abc8"/>
+ <text x="211" y="224" text-anchor="middle" font-size="15" fill="#a95f8a">♥</text>
+ 
+<rect x="322" y="144" width="125" height="140" rx="9" fill="#eac1bb" stroke="#b78392" stroke-width="6"/>
+ <rect x="331" y="153" width="107" height="18" rx="6" fill="#9a738b"/>
+ <text x="384" y="167" text-anchor="middle" font-family="Arial" font-size="11" font-weight="bold" fill="#fff4ed">DESTINOS</text>
+<rect x="333" y="182" width="46" height="27" rx="4" fill="#fff7e5" stroke="#c99ba9" stroke-width="2"/><path d="M336 185L356 199L376 185" stroke="#d9a1aa" stroke-width="2" fill="none"/>
+<rect x="385" y="182" width="46" height="27" rx="4" fill="#fff7e5" stroke="#c99ba9" stroke-width="2"/><path d="M388 185L408 199L428 185" stroke="#d9a1aa" stroke-width="2" fill="none"/>
+<rect x="333" y="214" width="46" height="27" rx="4" fill="#fff7e5" stroke="#c99ba9" stroke-width="2"/><path d="M336 217L356 231L376 217" stroke="#d9a1aa" stroke-width="2" fill="none"/>
+<rect x="385" y="214" width="46" height="27" rx="4" fill="#fff7e5" stroke="#c99ba9" stroke-width="2"/><path d="M388 217L408 231L428 217" stroke="#d9a1aa" stroke-width="2" fill="none"/>
+<rect x="333" y="246" width="46" height="27" rx="4" fill="#fff7e5" stroke="#c99ba9" stroke-width="2"/><path d="M336 249L356 263L376 249" stroke="#d9a1aa" stroke-width="2" fill="none"/>
+<rect x="385" y="246" width="46" height="27" rx="4" fill="#fff7e5" stroke="#c99ba9" stroke-width="2"/><path d="M388 249L408 263L428 249" stroke="#d9a1aa" stroke-width="2" fill="none"/>
+<ellipse cx="550" cy="316" rx="97" ry="19" fill="#935e65" opacity=".21"/>
+ <rect x="481" y="142" width="146" height="167" rx="27" fill="#ac6f93" stroke="#765476" stroke-width="7"/>
+ <rect x="494" y="152" width="120" height="70" rx="22" fill="#e9b1c2"/>
+ <rect x="504" y="183" width="101" height="15" rx="7" fill="#754967"/>
+ <text x="554" y="176" fill="#fff7ed" text-anchor="middle" font-family="Arial" font-size="17" font-weight="bold">CORREIO</text>
+ <rect x="494" y="233" width="120" height="58" rx="8" fill="#fff0e1" stroke="#8f6d80" stroke-width="4"/>
+ <path d="M502 241L552 266L606 241" fill="none" stroke="#bb849b" stroke-width="4"/>
+ <circle cx="552" cy="265" r="10" fill="#d197ac"/>
+ 
+<g transform="translate(49 389) scale(1.1)"><ellipse cx="0" cy="9" rx="30" ry="11" fill="#3f2f4f" opacity=".19"/><path d="M-22 -11L-18 20Q0 30 18 20L22 -11Z" fill="#bd7788" stroke="#8d5276" stroke-width="3"/><path d="M-10 -13Q-31 -45 -17 -66" fill="none" stroke="#518d64" stroke-width="5"/><path d="M4 -13Q0 -57 22 -66" fill="none" stroke="#518d64" stroke-width="5"/><ellipse cx="-18" cy="-51" rx="16" ry="9" transform="rotate(-30 -18 -51)" fill="#6da779" stroke="#4a896d" stroke-width="2"/><ellipse cx="-29" cy="-34" rx="16" ry="9" transform="rotate(-50 -29 -34)" fill="#6da779" stroke="#4a896d" stroke-width="2"/><ellipse cx="16" cy="-57" rx="16" ry="9" transform="rotate(35 16 -57)" fill="#6da779" stroke="#4a896d" stroke-width="2"/><ellipse cx="23" cy="-37" rx="16" ry="9" transform="rotate(45 23 -37)" fill="#6da779" stroke="#4a896d" stroke-width="2"/><ellipse cx="-4" cy="-74" rx="16" ry="9" transform="rotate(5 -4 -74)" fill="#6da779" stroke="#4a896d" stroke-width="2"/><ellipse cx="5" cy="-42" rx="16" ry="9" transform="rotate(5 5 -42)" fill="#6da779" stroke="#4a896d" stroke-width="2"/><ellipse cx="-8.0" cy="-60.0" rx="7" ry="5" fill="#ffb8c8"/><ellipse cx="-13.5" cy="-52.4" rx="7" ry="5" fill="#ffb8c8"/><ellipse cx="-22.5" cy="-55.3" rx="7" ry="5" fill="#ffb8c8"/><ellipse cx="-22.5" cy="-64.7" rx="7" ry="5" fill="#ffb8c8"/><ellipse cx="-13.5" cy="-67.6" rx="7" ry="5" fill="#ffb8c8"/><circle cx="-16" cy="-60" r="4" fill="#ffe4a5"/><ellipse cx="29.0" cy="-52.0" rx="7" ry="5" fill="#ffb8c8"/><ellipse cx="23.5" cy="-44.4" rx="7" ry="5" fill="#ffb8c8"/><ellipse cx="14.5" cy="-47.3" rx="7" ry="5" fill="#ffb8c8"/><ellipse cx="14.5" cy="-56.7" rx="7" ry="5" fill="#ffb8c8"/><ellipse cx="23.5" cy="-59.6" rx="7" ry="5" fill="#ffb8c8"/><circle cx="21" cy="-52" r="4" fill="#ffe4a5"/><ellipse cx="9.0" cy="-70.0" rx="7" ry="5" fill="#ffb8c8"/><ellipse cx="3.5" cy="-62.4" rx="7" ry="5" fill="#ffb8c8"/><ellipse cx="-5.5" cy="-65.3" rx="7" ry="5" fill="#ffb8c8"/><ellipse cx="-5.5" cy="-74.7" rx="7" ry="5" fill="#ffb8c8"/><ellipse cx="3.5" cy="-77.6" rx="7" ry="5" fill="#ffb8c8"/><circle cx="1" cy="-70" r="4" fill="#ffe4a5"/></g><g transform="translate(720 385) scale(1.06)"><ellipse cx="0" cy="9" rx="30" ry="11" fill="#3f2f4f" opacity=".19"/><path d="M-22 -11L-18 20Q0 30 18 20L22 -11Z" fill="#bd7788" stroke="#8d5276" stroke-width="3"/><path d="M-10 -13Q-31 -45 -17 -66" fill="none" stroke="#518d64" stroke-width="5"/><path d="M4 -13Q0 -57 22 -66" fill="none" stroke="#518d64" stroke-width="5"/><ellipse cx="-18" cy="-51" rx="16" ry="9" transform="rotate(-30 -18 -51)" fill="#6da779" stroke="#4a896d" stroke-width="2"/><ellipse cx="-29" cy="-34" rx="16" ry="9" transform="rotate(-50 -29 -34)" fill="#6da779" stroke="#4a896d" stroke-width="2"/><ellipse cx="16" cy="-57" rx="16" ry="9" transform="rotate(35 16 -57)" fill="#6da779" stroke="#4a896d" stroke-width="2"/><ellipse cx="23" cy="-37" rx="16" ry="9" transform="rotate(45 23 -37)" fill="#6da779" stroke="#4a896d" stroke-width="2"/><ellipse cx="-4" cy="-74" rx="16" ry="9" transform="rotate(5 -4 -74)" fill="#6da779" stroke="#4a896d" stroke-width="2"/><ellipse cx="5" cy="-42" rx="16" ry="9" transform="rotate(5 5 -42)" fill="#6da779" stroke="#4a896d" stroke-width="2"/><ellipse cx="-8.0" cy="-60.0" rx="7" ry="5" fill="#ffb8c8"/><ellipse cx="-13.5" cy="-52.4" rx="7" ry="5" fill="#ffb8c8"/><ellipse cx="-22.5" cy="-55.3" rx="7" ry="5" fill="#ffb8c8"/><ellipse cx="-22.5" cy="-64.7" rx="7" ry="5" fill="#ffb8c8"/><ellipse cx="-13.5" cy="-67.6" rx="7" ry="5" fill="#ffb8c8"/><circle cx="-16" cy="-60" r="4" fill="#ffe4a5"/><ellipse cx="29.0" cy="-52.0" rx="7" ry="5" fill="#ffb8c8"/><ellipse cx="23.5" cy="-44.4" rx="7" ry="5" fill="#ffb8c8"/><ellipse cx="14.5" cy="-47.3" rx="7" ry="5" fill="#ffb8c8"/><ellipse cx="14.5" cy="-56.7" rx="7" ry="5" fill="#ffb8c8"/><ellipse cx="23.5" cy="-59.6" rx="7" ry="5" fill="#ffb8c8"/><circle cx="21" cy="-52" r="4" fill="#ffe4a5"/><ellipse cx="9.0" cy="-70.0" rx="7" ry="5" fill="#ffb8c8"/><ellipse cx="3.5" cy="-62.4" rx="7" ry="5" fill="#ffb8c8"/><ellipse cx="-5.5" cy="-65.3" rx="7" ry="5" fill="#ffb8c8"/><ellipse cx="-5.5" cy="-74.7" rx="7" ry="5" fill="#ffb8c8"/><ellipse cx="3.5" cy="-77.6" rx="7" ry="5" fill="#ffb8c8"/><circle cx="1" cy="-70" r="4" fill="#ffe4a5"/></g>
+<ellipse cx="383" cy="420" rx="120" ry="28" fill="#f4baba" opacity=".65"/>
+ <ellipse cx="383" cy="419" rx="99" ry="18" fill="#fff0da" opacity=".7"/>
+ <text x="383" y="425" font-family="Georgia" font-style="italic" font-size="16" text-anchor="middle" fill="#ad7c86">Escreva sua história ♡</text>
+</svg>
