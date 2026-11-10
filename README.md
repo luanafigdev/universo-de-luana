@@ -2,11 +2,6 @@
 
 Portfólio interativo em ilustração 2D desenvolvido com **HTML, CSS, JavaScript e Canvas 2D**. O visitante passeia por uma vila com quatro locais, conhece projetos reais e encontra o mascote Dudu.
 
-## Como executar
-
-1. Extraia a pasta `universo`.
-2. Abra `index.html` diretamente no navegador.
-3. Se preferir, use a extensão Live Server no VS Code. Não é necessário instalar dependências.
 
 ## Controles
 
