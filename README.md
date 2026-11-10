@@ -17,7 +17,7 @@ Portfólio interativo em ilustração 2D desenvolvido com **HTML, CSS, JavaScrip
 - **Fliperama:** Flappy Doggy e o repositório de seu código.
 - **Laboratório:** apresentação, formação e tecnologias utilizadas.
 - **Correio:** contato profissional e perfil do GitHub.
-- **Dudu:** meu cachorro pessoal, um shih-tzu preto e branco que passeia pela vila. Aproxime-se para fazer carinho. Existe uma pequena surpresa para visitantes curiosos.
+- **Dudu:** shih-tzu preto e branco que passeia pela vila. Aproxime-se para fazer carinho. Existe uma pequena surpresa para visitantes curiosos.
 
 ## Organização
 
@@ -40,11 +40,19 @@ universo/
 - Controles por toque e orientação de como jogar na própria página.
 - Progresso de exploração armazenado no `localStorage` do navegador, em uma chave exclusiva da V1 (para não importar conquistas de testes anteriores). Use **Reiniciar conquistas** para voltar a 0/4. O segredo do Dudu é armazenado apenas nesta sessão, quando o navegador permite.
 
-
 ## Tecnologias
 
 - HTML semântico, CSS responsivo e JavaScript nativo.
 - Canvas 2D para a vila, interiores, animações e personagem.
 - Ilustrações SVG/WebP e sprites PNG. Não há dependências externas.
 
-Todos os direitos reservados. 
+Esta versão é uma entrega jogável para revisão final no navegador e no celular antes da publicação. Os desenhos utilizados foram preparados para esta experiência e os links apontam para projetos da autora.
+
+## Projetos adicionados à Vila
+
+- **Confeitaria:** BASIL — Kitchen Stories, ao lado das versões da Flor de Açúcar.
+- **Fliperama:** Moonbloom e Midnight Café, com o Flappy Doggy. O código do Flappy Doggy continua acessível no painel do jogo.
+- **Laboratório:** ORBIT (incluindo ALUNAR e NOCTIS) e AURA Travel, ao lado da apresentação e das tecnologias.
+- **Correio:** preservado para contato profissional e GitHub.
+
+Os ambientes exibem marcadores para os projetos e o guia lateral permite abrir todos os painéis sem movimentar a personagem.

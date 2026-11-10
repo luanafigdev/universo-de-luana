@@ -279,7 +279,9 @@
       if(hit){enterScene(hit.id);return;}
     }else{
       if(x>=326&&x<=442&&y>=425){leaveScene();return;}
-      const hit=state.current.objects.find(o=>Math.abs(x-o.x)<83&&Math.abs(y-o.y)<104);
+      const hit=state.current.objects
+        .filter(o=>Math.abs(x-o.x)<91&&Math.abs(y-(o.y+67))<43)
+        .sort((a,b)=>Math.abs(x-a.x)-Math.abs(x-b.x))[0];
       if(hit){openDialog(hit);return;}
     }
     canvas.focus({preventScroll:true});

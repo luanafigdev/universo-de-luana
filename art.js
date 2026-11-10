@@ -185,6 +185,26 @@
     avatar(c,s.player.x,s.player.y,s.player.dir,s.player.step,t);
     if(s.dudu&&s.dudu.y>s.player.y)drawDudu(c,s);
   }
+  function objectMarker(c,obj,active,roomId){
+    const x=obj.x, y=obj.y+67;
+    const width=roomId==='lab'?165:198;
+    const left=x-width/2;
+    const tint=roomId==='arcade'?'#e6baff':roomId==='flor'?'#ffd1e4':'#bdf1e5';
+    c.save();
+    c.shadowColor=active?tint:'transparent';
+    c.shadowBlur=active?18:0;
+    rr(c,left,y-28,width,56,12,active?'#352b51ed':'#241e40d9',active?tint:'#ead9ff75',active?2:1);
+    c.shadowBlur=0;
+    c.fillStyle=tint;
+    c.textAlign='center';
+    c.font='700 20px system-ui, sans-serif';
+    c.fillText(obj.symbol,x,y-1);
+    c.fillStyle='#fff9ff';
+    c.font='700 12px system-ui, sans-serif';
+    const label=obj.label.length>22?obj.label.slice(0,21)+'…':obj.label;
+    c.fillText(label,x,y+17,width-14);
+    c.restore();
+  }
   function interior(c,s){
     const room=s.current, t=s.reducedMotion ? 0 : s.time;
     background(c,images[room.id],room.wall);
@@ -192,8 +212,9 @@
       sparkle(c,90+i*125+(i%2)*31,80+(i*71)%170,2.4,t+i);
     }
     room.objects.forEach((obj,idx)=>{
-      halo(c,obj.x,obj.y+62,t+idx*.7,room.id==='arcade'?'#e0bdff':'#fff1bd');
-      if(s.near===obj)bubble(c,obj.x,obj.y+40,'E · EXPLORAR');
+      halo(c,obj.x,obj.y+36,t+idx*.7,room.id==='arcade'?'#e0bdff':'#fff1bd');
+      objectMarker(c,obj,s.near===obj,room.id);
+      if(s.near===obj)bubble(c,obj.x,obj.y-22,'E · EXPLORAR');
     });
     if(s.near?.exit) bubble(c,384,422,'E · SAIR');
     avatar(c,s.player.x,s.player.y,s.player.dir,s.player.step,t);
